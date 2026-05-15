@@ -53,6 +53,30 @@ h1, h2 {
     50% { border-color: #FFD700; }
 }
 
+/* --- ESTILOS DA IMAGEM DE PERFIL --- */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.profile-img {
+    width: 250px; /* Define o tamanho do quadrado */
+    height: 250px; /* Mantém a proporção quadrada */
+    object-fit: cover; /* Garante que a imagem não fique esticada */
+    border-radius: 20px; /* Deixa as bordas arredondadas para um visual moderno */
+    border: 3px solid #FFD700; /* Borda dourada combinando com o tema */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Sombra para dar profundidade e destacar do fundo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3); /* Brilho dourado no hover */
+}
+
 /* --- ANIMAÇÃO DE CÓDIGO FLUTUANTE (PARTÍCULAS) --- */
 .tech-particles {
     position: absolute;
