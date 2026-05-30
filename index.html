@@ -3,76 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christyan Rienzo | Portfólio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <title>Meu Portfólio De Desenvolvedor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">CR.</div>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato" class="btn-nav">Contato</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">CHRISTYAN<span class="text-primary">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Christyan Rienzo</h1>
-            <p>Estudante de Gestão de TI & Desenvolvedor Full Stack</p>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <div class="sobre-conteudo">
-            <p>Tenho 28 anos, moro em Jarinu/SP e curso o 5º semestre de Gestão em TI na Anhanguera. Focado em transformar processos através da tecnologia, com experiência em <strong>Python, Node.js e Java</strong>.</p>
+<header class="hero position-relative">
+    <div class="tech-particles">
+        <span>{ }</span>
+        <span>&lt;/&gt;</span>
+        <span>( )</span>
+        <span>[ ]</span>
+        <span>#</span>
+    </div>
+
+    <div class="container position-relative" style="z-index: 2;">
+        <h1> Seja bem vindo ao meu mundo </h1>
+        <div class="typewriter-container">
+            <p class="typewriter">Desenvolvedor Web</p>
         </div>
-    </section>
 
-    <section id="projetos">
-        <h2>Projetos em Destaque</h2>
-        <div class="grid-projetos">
-            
-            <div class="card">
-                <div class="card-header">
-                    <h3>Projeto Poker</h3>
-                </div>
-                <p>Aplicação em Python para controle de ROI e gestão de banca.</p>
-                <div class="card-footer">
-                    <a href="https://github.com/christyanlopes6-arch" target="_blank" class="btn-projeto">Ver Código</a>
+        <div class="profile-img-container mt-5 mb-4">
+            <img src="Eu.png" alt="Foto de Christyan" class="profile-img">
+        </div>
+    </div>
+</header>
+
+<section id="sobre" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">Sobre Mim</h2>
+        <p>Sou um entusiasta da tecnologia focado em criar soluções modernas e responsivas para a web.</p>
+        <p>Cursando Gestão em Tecnologia da informação na Anhanguera.</p>
+    </div>
+</section>
+
+<section id="projetos" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Meus Projetos</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card card-projeto shadow-sm border-0 h-100">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Elite Barber</h5>
+                            <p class="card-text text-muted">Sistema de agendamento para barbearias.</p>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalEliteBarber">
+                            Ver Detalhes
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <h3>Delivery Skina do Recanto</h3>
+            <div class="col-md-4">
+                <div class="card card-projeto shadow-sm border-0 h-100">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Mais Sabor</h5>
+                            <p class="card-text text-muted">Projeto focado em experiência gastronômica e interface intuitiva.</p>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalMaisSabor">
+                            Ver Detalhes
+                        </button>
+                    </div>
                 </div>
-                <p>Sistema completo de gestão de pedidos usando Node.js e Java.</p>
-                <div class="card-footer">
-                    <a href="#" target="_blank" class="btn-projeto">Ver Código</a>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-projeto shadow-sm border-0 h-100">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Calculadora Digital</h5>
+                            <p class="card-text text-muted">Desenvolvimento de uma calculadora funcional com manipulação de eventos e lógica matemática.</p>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalCalculadora">
+                            Ver Detalhes
+                        </button>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer id="contato">
-        <div class="footer-content">
-            <h2>Vamos conversar?</h2>
-            <p>Estou aberto a novas oportunidades e conexões.</p>
-            <div class="links">
-                <a href="mailto:seuemail@gmail.com" class="btn-footer">Me mande um Email</a>
-                <a href="https://github.com/christyanlopes6-arch" target="_blank" class="btn-footer outline">Meu GitHub</a>
+<div class="modal fade" id="modalEliteBarber" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+            <div class="modal-header border-0 justify-content-center">
+                <h5 class="modal-title fw-bold text-warning">Elite Barber</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-white-50 mb-4">Sistema de agendamento totalmente responsivo criado para funcionar perfeitamente em Celulares, Tablets e Computadores.</p>
+                <div class="d-grid gap-2">
+                    <a href="https://christyanlopes6-arch.github.io/Elite-barber/" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="bi bi-device-ssw"></i> Abrir Aplicação <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                    <button type="button" class="btn btn-outline-light mt-2" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+
+<div class="modal fade" id="modalMaisSabor" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+            <div class="modal-header border-0 justify-content-center">
+                <h5 class="modal-title fw-bold text-warning">Mais Sabor</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-white-50 mb-4">Plataforma gastronômica otimizada com foco em experiência de usuário (UX) mobile e desktop.</p>
+                <div class="d-grid gap-2">
+                    <a href="https://christyanlopes6-arch.github.io/Mais-Sabor/" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="bi bi-device-hdd"></i> Abrir Aplicação <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                    <button type="button" class="btn btn-outline-light mt-2" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCalculadora" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+            <div class="modal-header border-0 justify-content-center">
+                <h5 class="modal-title fw-bold text-warning">Calculadora Digital</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-white-50 mb-4">Calculadora digital com layout fluido, perfeita para cliques rápidos no celular ou uso no teclado do PC.</p>
+                <div class="d-grid gap-2">
+                    <a href="https://christyanlopes6-arch.github.io/Calculadora/" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="bi bi-calculator"></i> Abrir Aplicação <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                    <button type="button" class="btn btn-outline-light mt-2" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="contato" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold section-title">VAMOS CONVERSAR?</h2>
+        <p class="mb-5 text-white lead">Gostou do meu trabalho? Entre em contato ou veja mais nas minhas redes.</p>
+
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+            <a href="https://wa.me/5511999354556" target="_blank" class="btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+            </a>
+            <a href="https://github.com/christyanlopes6-arch" target="_blank" class="btn-github-total">
+                <i class="bi bi-github"></i> GITHUB
+            </a>
+            <a href="https://www.linkedin.com/in/christyan-rienzo-lopes-de-oliveira-36b068307/" target="_blank" class="btn-github-total">
+                <i class="bi bi-linkedin"></i> LINKEDIN
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-4 border-top border-secondary">
+    <p class="mb-0">© 2026 Christyan Rienzo - Jarinu, SP</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
